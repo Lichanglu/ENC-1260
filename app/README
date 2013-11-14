@@ -1,0 +1,18 @@
+一.编译准备工作
+	1.修改版本号（common.h）。
+	2.修改板卡类型（modules.mak）（enc1100，enc1200 发布版本时 一定要关闭日志）。
+二.搭建打升级包环境。
+	1.修改升级包保存目录 （makefile文件中“UPDATE_DIR = ./update”，./update目录中必须包含mkuppkg，add_header.elf)。
+	2.修改./update下的mkuppkg脚本定义路径变量（即，将要打包文件(配置文件，应用程序，编码库等)的路径）
+	3.输入打包命令make pkg 就会在./update目录下生产相应的升级包。
+三.搭建新库环境。
+	1.进入sdk根目录（dvsdk_2_00_00_18）下将Rule.make 拷贝一份并将其命名为Rule_HP.make, 修改Rule_HP.make中CODEC_INSTALL_DIR变量 
+		将dm6467_dvsdk_combos_2_03改为dm6467_dvsdk_combos_2_03_hp。
+	2.将dvsdk_2_00_00_18目录下dm6467_dvsdk_combos_2_03拷贝一份并将其命名为dm6467_dvsdk_combos_2_03_hp。
+	3.进入dm6467_dvsdk_combos_2_03_hp中修改Makefile 将Rule.make改为Rule_HP.make。
+	4.将新的编码库替换dm6467_dvsdk_combos_2_03_hp相应的目录下。
+	5.重新编译新库（dm6467_dvsdk_combos_2_03_hp）和老库（dm6467_dvsdk_combos_2_03）。
+四.如何编译(编译及打升级包一次完成)
+	1.编译老库:	make clean &&　make && make pkg
+	2.编译新库: make clean && make ENC=HP &&  make ENC=HP pkg
+	3.同时编译老库和新库：make clean &&　make && make pkg ;  make clean && make ENC=HP &&  make ENC=HP pkg
