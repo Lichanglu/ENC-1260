@@ -1,0 +1,163 @@
+---------------------------------------
+[Main]
+Menu0=Media
+Menu00=Open stream
+Menu01=Exit
+Menu02=Open .sdp
+
+Menu1=History
+Menu10=Clean
+
+Menu2=Tool
+Menu20=Video 
+Menu21=Snapshot
+Menu22=Record
+Menu23=Setting
+Menu24=Encoder setting
+Menu25=Info
+
+Menu3=Help
+Menu30=About
+Menu31=License
+
+SubMenu0=Video
+SubMenu00=Full screen
+SubMenu01=Origin
+
+SubMenu1=Setting
+SubMenu10=Snapshot path
+SubMenu11=Recorded path
+SubMenu12=Language
+
+---------------------------------------
+[RMenu]
+RMenu0=Open stream
+RMenu1=Video 
+RMenu2=Play
+RMenu3=Pause
+RMenu4=Stop 
+RMenu5=Record
+RMenu6=Stop recorded
+RMenu7=Origin
+RMenu8=Encoder setting
+RMenu9=Info
+
+---------------------------------------
+[Open Vedio]
+Caption=Open stream
+
+Static1=Please input network URL:
+Static2=Example:
+
+Button1=Open
+Button2=Cancel
+
+---------------------------------------
+[Picture]
+Caption=Save Pictures
+
+Static1=Pictures will be saved in this folder:
+Static2=Picture has put to
+Static3=Please choose the folder to save pictures
+
+Button1=Change
+Button2=Ok
+Button3=Cancel
+
+---------------------------------------
+[Record]
+Caption=Save Recorded
+
+Static1=Record file save to this folder:
+Static2=Recorded will save to
+Static3=Recorded hss saved to
+Static4=Please choose the folder to save recording file
+Button1=Change
+Button2=Ok
+Button3=Cancel
+
+---------------------------------------
+[Encoded]
+Caption=Encoder Setting
+
+List1=User 
+List2=Vedio
+List3=Audio
+List4=Stream
+
+Button1=Ok
+Button2=Cancel
+Button3=Apply
+
+---------------------------------------
+[Login]
+Static1=User name:
+Static2=Password:
+Static3=IP address:
+
+Button1=Connect
+Button2=Disconnect
+
+---------------------------------------
+[Vedio]
+Static1=Bit rate:
+Static2=Frame rate:
+Static3=Resolution:
+
+
+---------------------------------------
+[Audio]
+Static1=Sample rate:
+Static2=Bit rate:
+Static3=Input:
+Static4=Audio level left:
+Staitc5=Audio level right:
+
+
+---------------------------------------
+[Stream Code]
+Static1=Start
+Static2=Pause
+Static3=Stop
+Static4=Resume
+
+Button1=Save
+
+---------------------------------------
+[About]
+Caption=About RiPlayer
+
+Button1=Ok
+
+---------------------------------------
+[Info]
+Caption=Media information
+
+Static0=Play address:
+Static1=Media info:
+Static2=Video rate:
+Static3=Frame rate:
+Static4=Bit rate:
+Static5=Played video frame:
+Static6=Lost video frame:
+Static7=Video original size:
+Static8=Current video size:
+Static9=
+
+---------------------------------------
+[MsgBox]
+Caption1=Warning
+Caption2=Inform
+Caption3=Error
+
+Button1=Ok
+Button2=Cancel
+
+Tip1=IP address is wrong!
+Tip2=Invalid username or password!
+Tip3=Connect encoder success!
+Tip4=Sucessed!
+Tip5=Can not open the url!
+Tip10=Can not open the file!
+Tip11=Receive no stream!
+

@@ -1,0 +1,6 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Riplayer.rc
+//
+#define HIDC_STATIC                     0x8087ffff    // IDD_PLAYVEDIO
+#define HIDC_STATIC2                    0x808b0422    // IDD_STREAM
+#define HIDC_STATIC5                    0x80890426    // IDD_VOICE

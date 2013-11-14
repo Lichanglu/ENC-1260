@@ -1,0 +1,633 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Riplayer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Riplayer.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\LogOff.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\CDRom.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\Sound.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\Open.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\Riplayer_01.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RIPLAYER_DIALOG DIALOGEX 0, 0, 539, 400
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_VIEW,3,20,530,351,NOT WS_GROUP
+END
+
+IDD_RECORD DIALOG DISCARDABLE  0, 0, 197, 106
+STYLE WS_POPUP
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT2,34,55,107,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "把录制文件保存到此文件夹中:",IDC_STATIC1,34,36,151,8
+END
+
+IDD_INFO DIALOG DISCARDABLE  0, 0, 246, 152
+STYLE WS_POPUP
+FONT 9, "微软雅黑"
+BEGIN
+END
+
+IDD_PLAYVEDIO DIALOGEX 0, 0, 237, 171
+STYLE WS_POPUP
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_URL,13,44,209,14,ES_AUTOHSCROLL
+    LTEXT           "请输入网络URL：",IDC_STATIC1,13,29,135,8
+    LTEXT           "udp://@234.255.0.6:9500",IDC_STATIC,13,86,154,11,0,0,
+                    HIDC_STATIC
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,19,235,1,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "例子：",IDC_STATIC2,13,68,92,8
+    LTEXT           "rtp://@234.255.0.9:9000",IDC_STATIC,13,121,207,11
+    LTEXT           "rtsp://192.168.5.9:554",IDC_STATIC,13,103,154,11
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 174, 123
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,63,40,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,63,57,82,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "用户名：",IDC_STATIC1,7,42,51,8,NOT WS_GROUP
+    RTEXT           "密码：",IDC_STATIC2,11,59,46,8
+    RTEXT           "IP地址：",IDC_STATIC3,7,24,51,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,
+                    63,21,82,12
+END
+
+IDD_VOICE DIALOGEX 0, 0, 200, 125
+STYLE WS_CHILD
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    RTEXT           "采样率：",IDC_STATIC1,5,8,67,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO1,76,7,47,41,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "音频码率：",IDC_STATIC2,6,27,66,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO2,76,25,47,41,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,76,43,47,41,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "音频输入：",IDC_STATIC3,21,45,51,8,NOT WS_GROUP
+    RTEXT           "左声道增益：",IDC_STATIC4,0,63,72,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO4,76,61,47,72,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    COMBOBOX        IDC_COMBO5,76,79,47,94,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    RTEXT           "右声道增益：",IDC_STATIC5,3,81,69,8,NOT WS_GROUP,0,
+                    HIDC_STATIC5
+    LTEXT           "db",IDC_STATIC,130,63,10,8
+    LTEXT           "db",IDC_STATIC,130,81,10,8
+END
+
+IDD_VEDIO DIALOG DISCARDABLE  0, 0, 197, 115
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    RTEXT           "码率：",IDC_STATIC1,10,22,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT1,56,21,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "帧率：",IDC_STATIC2,10,40,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT3,56,38,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "输出分辨率：",IDC_STATIC3,4,57,48,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO1,56,56,56,150,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    LTEXT           "f/s(1-30)",IDC_STATIC_TIP1,92,39,61,8
+    LTEXT           "kbps(128-20000)",IDC_STATIC_TIP2,93,23,62,8
+END
+
+IDD_STREAM DIALOGEX 0, 0, 193, 132
+STYLE WS_CHILD
+FONT 9, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "TS：",IDC_STATIC1,13,21,13,8
+    LTEXT           "RTSP：",IDC_STATIC2,13,38,19,8,0,0,HIDC_STATIC2
+    LTEXT           "RTP：",IDC_STATIC3,13,56,16,8
+    LTEXT           "IP:",IDC_STATIC4,13,76,13,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    32,73,66,15
+END
+
+IDD_SET DIALOG DISCARDABLE  0, 0, 212, 174
+STYLE WS_POPUP
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_RECT,55,25,153,127,BS_LEFT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | 
+                    WS_TABSTOP,3,25,50,124
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,53,24,1,
+                    127
+END
+
+IDD_PICTURE DIALOG DISCARDABLE  0, 0, 200, 105
+STYLE WS_POPUP
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "把拍照图片保存到此文件夹中:",IDC_STATIC1,32,37,153,8
+    EDITTEXT        IDC_EDIT1,32,55,107,15,ES_READONLY
+END
+
+IDD_ABOUTDLG DIALOG DISCARDABLE  0, 0, 208, 96
+STYLE WS_POPUP
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_ICON5,IDC_STATIC3,56,34,20,20
+    LTEXT           "RiPlayer v1.0.7",IDC_STATIC1,79,37,81,9,SS_NOPREFIX
+END
+
+IDD_MESSAGEBOXDLG DIALOG DISCARDABLE  0, 0, 178, 93
+STYLE WS_POPUP
+FONT 10, "宋体"
+BEGIN
+END
+
+IDD_TIPDIALOG DIALOG DISCARDABLE  0, 0, 420, 49
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,6
+ PRODUCTVERSION 1,0,0,6
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RiPlayer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 6\0"
+            VALUE "InternalName", "RiPlayer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RiPlayer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "RiPlayer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RIPLAYER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 538
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 396
+    END
+
+    IDD_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 196
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_PLAYVEDIO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_VOICE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 197
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_VEDIO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 192
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_SET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 211
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PICTURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 198
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_ABOUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_MESSAGEBOXDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 177
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_TIPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP " 右键菜单"
+    BEGIN
+        MENUITEM "打开媒体",                    IDM_OPEN
+        POPUP "视频缩放"
+        BEGIN
+            MENUITEM "全屏",                        IDM_FULLSCREEN
+            MENUITEM "原始",                        IDM_ORIGINAL
+            MENUITEM "50%",                         IDM_SMALL
+            MENUITEM "200%",                        IDM_LARGE
+        END
+        MENUITEM "播放",                        IDC_BTN_PLAY
+        MENUITEM "暂停",                        IDC_BTN_PAUSE, GRAYED
+        MENUITEM "停止",                        IDC_BTN_STOP, GRAYED
+        MENUITEM "录制",                        IDC_BTN_RECORD, GRAYED
+        MENUITEM "停止录制",                    IDM_STOPRECROD, GRAYED
+        MENUITEM "拍照",                        IDC_BTN_PICTURE, GRAYED
+        MENUITEM "设置编码器",                  IDM_SETENCODE
+        MENUITEM "媒体中心",                    IDM_INFO
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "历史"
+    BEGIN
+        MENUITEM "清除",                        IDR_CLEARMENU
+    END
+END
+
+IDR_HELPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                        IDM_ABOUT
+    END
+END
+
+IDR_MEDIAMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "媒体"
+    BEGIN
+        MENUITEM "打开网络流",                  IDM_OPEN
+        MENUITEM "打开文件",                    IDM_OPENFILE
+        MENUITEM "退出",                        IDM_EXIT
+    END
+END
+
+IDR_TOOLMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "工具"
+    BEGIN
+        MENUITEM "媒体中心",                    IDM_INFO
+        POPUP "视频缩放"
+        BEGIN
+            MENUITEM "全屏",                        IDM_FULLSCREEN
+            MENUITEM "原始",                        IDM_ORIGINAL
+            MENUITEM "50%",                         IDM_SMALL
+            MENUITEM "200%",                        IDM_LARGE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "拍照",                        IDC_BTN_PICTURE, GRAYED
+        MENUITEM "录制",                        IDC_BTN_RECORD, GRAYED
+        MENUITEM SEPARATOR
+        POPUP "设置"
+        BEGIN
+            MENUITEM "拍照路径",                    IDM_SETP
+            MENUITEM "录制路径",                    IDM_SETR
+            POPUP "语言选择"
+            BEGIN
+                MENUITEM "简体中文",                    IDR_CHINESE, CHECKED
+                MENUITEM "English",                     IDR_ENGLISH
+            END
+        END
+        MENUITEM "设置编码器",                  IDM_SETENCODE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_JPG_VOICE1          JPG     DISCARDABLE     "res\\2_2_5.jpg"
+IDR_JPG_MUTE1           JPG     DISCARDABLE     "res\\2_2_7.jpg"
+IDR_JPG_BTN1            JPG     DISCARDABLE     "res\\2_1_15.jpg"
+IDR_JPG_BTN1_1          JPG     DISCARDABLE     "res\\2_2_15.jpg"
+IDR_JPG_DIALOG1         JPG     DISCARDABLE     "res\\2_2_13.jpg"
+IDR_JPG_DIALOG2         JPG     DISCARDABLE     "res\\2_1_13.jpg"
+IDR_JPG_BTN2            JPG     DISCARDABLE     "res\\2_1_14.jpg"
+IDR_JPG_BTN2_2          JPG     DISCARDABLE     "res\\2_2_14.jpg"
+IDR_JPG2                JPG     DISCARDABLE     "res\\left.jpg"
+IDR_JPG7                JPG     DISCARDABLE     "res\\right.jpg"
+IDR_JPG4                JPG     DISCARDABLE     "res\\02.jpg"
+IDR_JPG5                JPG     DISCARDABLE     "res\\04.jpg"
+IDR_JPG6                JPG     DISCARDABLE     "res\\03.jpg"
+IDR_JPG8                JPG     DISCARDABLE     "res\\centerright.jpg"
+IDR_JPG3                JPG     DISCARDABLE     "res\\centerright2.jpg"
+IDR_JPG1                JPG     DISCARDABLE     "res\\left center.jpg"
+IDR_JPG_RECORD          JPG     DISCARDABLE     "res\\06.jpg"
+IDR_JPG_RECORD1         JPG     DISCARDABLE     "res\\6_1.jpg"
+IDR_JPG_PICTURE         JPG     DISCARDABLE     "res\\07.jpg"
+IDR_JPG_PICTURE1        JPG     DISCARDABLE     "res\\7_1.jpg"
+IDR_JPG_PAUSE           JPG     DISCARDABLE     "res\\08.jpg"
+IDR_JPG_PAUSE1          JPG     DISCARDABLE     "res\\8_1.jpg"
+IDR_JPG_STOP            JPG     DISCARDABLE     "res\\09.jpg"
+IDR_JPG_STOP1           JPG     DISCARDABLE     "res\\9_1.jpg"
+IDR_JPG_VOICE           JPG     DISCARDABLE     "res\\10.jpg"
+IDR_JPG_MUTE            JPG     DISCARDABLE     "res\\10_1.jpg"
+IDR_JPG_SLIDER          JPG     DISCARDABLE     "res\\12.jpg"
+IDR_JPG_SLIDER0         JPG     DISCARDABLE     "res\\11.jpg"
+IDR_JPG_DISPLAY         JPG     DISCARDABLE     "res\\05.jpg"
+IDR_JPG_BAR             JPG     DISCARDABLE     "res\\13.jpg"
+IDR_JPG_PLAY            JPG     DISCARDABLE     "res\\14.jpg"
+IDR_JPG_PLAY1           JPG     DISCARDABLE     "res\\14_1.jpg"
+IDR_JPG_MIN             JPG     DISCARDABLE     "res\\15.jpg"
+IDR_JPG_MIN1            JPG     DISCARDABLE     "res\\15_1.jpg"
+IDR_JPG_CLOSE           JPG     DISCARDABLE     "res\\17.jpg"
+IDR_JPG_CLOSE1          JPG     DISCARDABLE     "res\\17_1.jpg"
+IDR_JPG_MAX             JPG     DISCARDABLE     "res\\19.jpg"
+IDR_JPG_MAX1            JPG     DISCARDABLE     "res\\16_1.jpg"
+IDR_JPG_ORIG1           JPG     DISCARDABLE     "res\\20.jpg"
+IDR_JPG_ICON            JPG     DISCARDABLE     "res\\18.jpg"
+IDR_MENUBK              JPG     DISCARDABLE     "res\\21.jpg"
+IDR_JPG_ORIG            JPG     DISCARDABLE     "res\\16.jpg"
+IDR_CLOSEX              JPG     DISCARDABLE     "res\\about(06-18-10-33-07)_1.jpg"
+IDR_CLOSEX1             JPG     DISCARDABLE     "res\\about(06-18-10-33-07)_2.jpg"
+IDR_ABOUT               JPG     DISCARDABLE     "res\\about(06-18-10-33-07).jpg"
+IDR_RECSTOP1            JPG     DISCARDABLE     "res\\22_1.jpg"
+IDR_RECSTOP             JPG     DISCARDABLE     "res\\22.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VOICE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x3834, 0x484b, 0x007a, 
+    IDC_COMBO2, 0x403, 7, 0
+0x3436, 0x626b, 0x7370, "\000" 
+    IDC_COMBO2, 0x403, 7, 0
+0x3639, 0x626b, 0x7370, "\000" 
+    IDC_COMBO2, 0x403, 8, 0
+0x3231, 0x6b38, 0x7062, 0x0073, 
+    IDC_COMBO3, 0x403, 8, 0
+0x694c, 0x656e, 0x6920, 0x006e, 
+    IDC_COMBO3, 0x403, 4, 0
+0x694d, 0x0063, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO4, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO5, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO5, 0x403, 3, 0
+0x3031, "\000" 
+    0
+END
+
+IDD_VEDIO DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_COMBO1, 0x403, 10, 0
+0x3931, 0x3032, 0x3158, 0x3830, 0x0030, 
+    IDC_COMBO1, 0x403, 10, 0
+0x3431, 0x3030, 0x3158, 0x3530, 0x0030, 
+    IDC_COMBO1, 0x403, 10, 0
+0x3231, 0x3038, 0x3158, 0x3230, 0x0034, 
+    IDC_COMBO1, 0x403, 9, 0
+0x3231, 0x3038, 0x3758, 0x3032, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x3331, 0x3636, 0x3758, 0x3836, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x3231, 0x3038, 0x3758, 0x3836, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x3031, 0x3432, 0x3758, 0x3836, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x3237, 0x5830, 0x3834, 0x0030, 
+    IDC_COMBO1, 0x403, 8, 0
+0x3533, 0x5832, 0x3832, 0x0038, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 RiPlayer(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Riplayer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
